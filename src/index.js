@@ -9,12 +9,8 @@ import store from './store'
 import { Provider } from 'react-redux'
 import './styles/main.sass'
 
-// const store = configureStore()
+document.title = 'fendar.io'
 store.subscribe(() => console.log("subscribed! ",store.getState()))
-
-// store.dispatch(togglePostModal())
-
-// unsubscribe()
 
 ReactDOM.render(
   <Provider store={store}>
