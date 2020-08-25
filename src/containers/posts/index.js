@@ -38,9 +38,9 @@ class Posts extends React.Component {
   const mapStateToProps = (state) => {
       return {
         postsList: state.posts.postsList,
-        profilesList: state.profiles.profilesList,
         postCommentsList: state.posts.postCommentsList,
+        isPostModalHidden: state.ui.isPostModalHidden
       }
-  }  
+}  
    
   export default connect(mapStateToProps) (Posts)

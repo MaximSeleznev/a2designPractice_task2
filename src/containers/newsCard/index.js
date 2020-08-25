@@ -48,7 +48,6 @@ class NewsCardContainer extends React.Component {
   const mapStateToProps = (state) => {
       return {
         postCommentsList: state.posts.postCommentsList,
-        isPostModalHidden: state.ui.isPostModalHidden
       }
   } 
   

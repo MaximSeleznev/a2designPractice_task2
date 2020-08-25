@@ -6,7 +6,7 @@ export default function postsReducer(state = initialState.posts, action) {
           
         case "GET_POSTS": {
              
-            return { postsList: action.payload.sort(() => Math.random() - 0.5) }
+            return {...state, postsList: action.payload.sort(() => Math.random() - 0.5) }
         }
 
         case "GET_COMMENTS": {

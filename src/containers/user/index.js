@@ -59,6 +59,7 @@ class User extends React.Component {
         profilesList: state.profiles.profilesList,
         postsList: state.posts.postsList,
         postCommentsList: state.posts.postCommentsList,
+        isPostModalHidden: state.ui.isPostModalHidden
       }
   }   
    

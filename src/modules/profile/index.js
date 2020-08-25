@@ -5,7 +5,7 @@ import {getInitials} from '../../helpers/getInitials'
 
 const Profile = (props) => {
     const user = props.profilesList.find((val) => (val.id === parseInt(props.userId)))
-    const color = props.profilesList.find((val) => (val.id === parseInt(props.userId))).avatarColor
+    const color = props.profilesList[0]?user.avatarColor:null
     const avatarColorStyle = {
         background: color
     }

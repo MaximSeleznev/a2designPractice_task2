@@ -4,7 +4,7 @@ import '../../styles/modal.sass'
 import PostComment from '../postComment'
 
 const PostModal = props => {
-    const { userId, title, body } = props.postsList.find((elem) => (elem.id === props.postCommentsList[0].postId))
+    const { userId, title, body } = props.postsList.find((elem) => (elem.id === props.postCommentsList[0]?props.postCommentsList[0].postId:[]))
     const username = store.getState().profiles.profilesList.find((elem) => elem.id === userId).username
     const onClick = props.onClick
     return (

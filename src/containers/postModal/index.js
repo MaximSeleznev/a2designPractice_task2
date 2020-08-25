@@ -33,7 +33,7 @@ class PostModalContainer extends React.Component {
     render() {
       
       return (       
-        store.getState().ui.isPostModalHidden?null:<PostModal postCommentsList={this.returnPostCommentsList()} postsList= {this.returnPostsList()} onClick={this.toggleComments} /> 
+        <PostModal postCommentsList={this.returnPostCommentsList()} postsList= {this.returnPostsList()} onClick={this.toggleComments} /> 
       );
     }
   }
